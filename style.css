@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instaface{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 100vh;
+}
+
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.col1 img {
+    height: 40rem;
+}
+
+.col2 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around; /* O flex-direction trabalha em row, com isso o justify-content, por default fica na horizontal*/
+    align-items: center; /* Por default ele fica na vertical, mas agora está trabalhando na horizontal*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.info-perfil img{
+    height: auto;
+    max-width: 30rem;
+    min-width: 5rem;
+    width: 100%;    
+}
+
+.foto-perfil img{
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.group1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1rem 0;
+    border: 2px solid lightgray;
+}
+
+.botao-user{
+    margin-top: 15px;
+    background-color: #0095f6;
+    color: #ffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.info-account{
+    color: #0095f6;
+}
+
+.group2 {
+    color: rgb(184, 184, 184);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1rem 0;
+    border: 2px solid lightgray;
+}
+
+.group3 {
+    color: rgb(20, 20, 20);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1rem 0;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.switchAccounts {
+    color: #0095f6;
+}
+
+.signUp {
+    color: #0095f6;
+}
+
+.group4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ios-download img{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.android-download img{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3.3rem;
+}
+
+@media (max-width: 1024px) {
+    .col1 {
+        width:90%;
+    }
+}
+
+@media (max-width: 650px){
+    .col2{
+        width:90%;
+    }
+    .col1{
+        display: none;
+    }
+}
